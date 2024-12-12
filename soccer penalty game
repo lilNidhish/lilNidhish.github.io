@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
 
+<h1>Penalty Shooting App</h1>
+<p>Ball gets flung in the direction that you fling it. 
+
+When the play again button is clicked, the soccer ball moves back to its original location, the global ShotsLeft variable is set to 5,  the PointsLabel text is changed to Points: and the value of the Points global variable, the canvas' background image changes back to the soccer field, and the goal and soccer ball image sprites turn visible. 
+
+When the soccer ball touches a side/edge of the canvas, it will return to its original position, and have its speed set to 0. 
+
+When the soccer ball touches a side/edge of the canvsa, if the value of the ShotsLeft global variable is 0 and the value of the Points global variable doesn't equal 5, then the canvas' background image is set to a game over image, and the goal and soccer ball image sprites are turned invisible. 
+
+When the soccer ball collides with something else, if the thing it collides with is the goal image sprite, then the global Points variable is incremented by 1 and the PointsLabel text is changed to Points: concatenated with the value of the global Points variable. If the thing the ball collides with isn't the goal, then the ball will return its its original postition and its speed will be set to 0. If the ball collides with something and the value of the ShotsLeft variable is 0, and the value of the global Points variable is less than 5, then the canvas' background image is set to a game over picture, and the soccer ball and goal turn invisible. If the value of the global ShotsLeft variable is 0, and the value of the global Points variable is greater than or equal to 5, then set the background image of the canvas to a win picture, and the soccer ball and goal turn invisible. 
+
+When the MovingGoalCheckBox is changed, if its checked, then the goal image sprite's heading is set to 180 and its speed is set to 25. If its not checked, then the goal image sprite's heading is set to 0, its speed is set to 0, and it mvoes back to its original position.  
+
+When the GoalImageSprite reaches a side/edge of the canvas, if the value of the edge variable is -3, then the heading of the GoalIma.</p>
+
+</body>
+</html>
+Backlog Items: 
+
+geSprite is set to 0 and its speed is set to 25. If the value of the edge variable is 3, then the GoalImageSprite's heading is set to 180 and its speed is set to 25. 
